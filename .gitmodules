@@ -34,3 +34,6 @@
 [submodule "custom_nodes/IPAdapter-ComfyUI"]
 	path = custom_nodes/IPAdapter-ComfyUI
 	url = https://github.com/cubiq/ComfyUI_IPAdapter_plus.git
+[submodule "custom_nodes/ComfyUI-post-processing-nodes"]
+	path = custom_nodes/ComfyUI-post-processing-nodes
+	url = https://github.com/EllangoK/ComfyUI-post-processing-nodes.git
