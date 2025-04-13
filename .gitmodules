@@ -16,3 +16,6 @@
 [submodule "custom_nodes/mikey_nodes"]
 	path = custom_nodes/mikey_nodes
 	url = https://github.com/bash-j/mikey_nodes.git
+[submodule "custom_nodes/ComfyUI-Selector-CoInput-Multilingual"]
+	path = custom_nodes/ComfyUI-Selector-CoInput-Multilingual
+	url = https://github.com/ZHO-ZHO-ZHO/ComfyUI-Selector-CoInput-Multilingual.git
