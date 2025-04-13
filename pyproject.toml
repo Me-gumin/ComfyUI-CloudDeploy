@@ -21,3 +21,4 @@ lint.select = [
   "F",
 ]
 exclude = ["*.ipynb"]
+ignore = ["W29"]
