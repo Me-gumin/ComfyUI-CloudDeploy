@@ -49,3 +49,6 @@
 [submodule "custom_nodes/Custom-Scripts"]
 	path = custom_nodes/Custom-Scripts
 	url = https://github.com/pythongosssss/ComfyUI-Custom-Scripts.git
+[submodule "custom_nodes/TiledKSampler"]
+	path = custom_nodes/TiledKSampler
+	url = https://github.com/BlenderNeko/ComfyUI_TiledKSampler.git
