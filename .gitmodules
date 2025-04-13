@@ -31,3 +31,6 @@
 [submodule "custom_nodes/was-node-suite-comfyui"]
 	path = custom_nodes/was-node-suite-comfyui
 	url = https://github.com/WASasquatch/was-node-suite-comfyui
+[submodule "custom_nodes/IPAdapter-ComfyUI"]
+	path = custom_nodes/IPAdapter-ComfyUI
+	url = https://github.com/cubiq/ComfyUI_IPAdapter_plus.git
