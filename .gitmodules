@@ -22,3 +22,6 @@
 [submodule "custom_nodes/OneButtonPrompt"]
 	path = custom_nodes/OneButtonPrompt
 	url = https://github.com/AIrjen/OneButtonPrompt
+[submodule "custom_nodes/stability-ComfyUI-nodes"]
+	path = custom_nodes/stability-ComfyUI-nodes
+	url = https://github.com/Stability-AI/stability-ComfyUI-nodes.git
