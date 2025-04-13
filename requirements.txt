@@ -104,3 +104,12 @@ scikit-learn
 timm>=0.4.12
 tqdm
 transformers
+
+xformers==0.0.28.post3
+triton==3.1.0
+mediapipe==0.10.21
+addict==2.4.0
+yapf==0.43.0
+fvcore==0.1.5.post20221221
+omegaconf==2.3.0
+
