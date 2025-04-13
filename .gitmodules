@@ -13,3 +13,6 @@
 [submodule "web/extensions/SDXL_Art_Library_Zho"]
 	path = web/extensions/SDXL_Art_Library_Zho
 	url = https://github.com/ZHO-ZHO-ZHO/ComfyUI-SDXL_Art_Library-Button.git
+[submodule "custom_nodes/mikey_nodes"]
+	path = custom_nodes/mikey_nodes
+	url = https://github.com/bash-j/mikey_nodes.git
