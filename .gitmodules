@@ -43,3 +43,6 @@
 [submodule "custom_nodes/Image-Selector"]
 	path = custom_nodes/Image-Selector
 	url = https://github.com/SLAPaper/ComfyUI-Image-Selector.git
+[submodule "custom_nodes/Plasma"]
+	path = custom_nodes/Plasma
+	url = https://github.com/Jordach/comfy-plasma.git
