@@ -7,3 +7,6 @@
 [submodule "custom_nodes/CMManager"]
 	path = custom_nodes/CMManager
 	url = https://github.com/ltdrdata/ComfyUI-Manager.git
+[submodule "custom_nodes/ComfyUI_Custom_Nodes_AlekPet"]
+	path = custom_nodes/ComfyUI_Custom_Nodes_AlekPet
+	url = https://github.com/AlekPet/ComfyUI_Custom_Nodes_AlekPet.git
