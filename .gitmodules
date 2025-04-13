@@ -19,3 +19,6 @@
 [submodule "custom_nodes/ComfyUI-Selector-CoInput-Multilingual"]
 	path = custom_nodes/ComfyUI-Selector-CoInput-Multilingual
 	url = https://github.com/ZHO-ZHO-ZHO/ComfyUI-Selector-CoInput-Multilingual.git
+[submodule "custom_nodes/OneButtonPrompt"]
+	path = custom_nodes/OneButtonPrompt
+	url = https://github.com/AIrjen/OneButtonPrompt
