@@ -4,6 +4,7 @@ import threading
 import time
 import socket
 import urllib.request
+from comfy.cli_args import args
 from app.logger import setup_logger
 import logging
 
