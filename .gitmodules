@@ -10,3 +10,6 @@
 [submodule "custom_nodes/ComfyUI_Custom_Nodes_AlekPet"]
 	path = custom_nodes/ComfyUI_Custom_Nodes_AlekPet
 	url = https://github.com/AlekPet/ComfyUI_Custom_Nodes_AlekPet.git
+[submodule "web/extensions/SDXL_Art_Library_Zho"]
+	path = web/extensions/SDXL_Art_Library_Zho
+	url = https://github.com/ZHO-ZHO-ZHO/ComfyUI-SDXL_Art_Library-Button.git
