@@ -37,3 +37,6 @@
 [submodule "custom_nodes/ComfyUI-post-processing-nodes"]
 	path = custom_nodes/ComfyUI-post-processing-nodes
 	url = https://github.com/EllangoK/ComfyUI-post-processing-nodes.git
+[submodule "custom_nodes/efficiency-nodes-comfyui"]
+	path = custom_nodes/efficiency-nodes-comfyui
+	url = https://github.com/jags111/efficiency-nodes-comfyui.git
