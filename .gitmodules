@@ -4,3 +4,6 @@
 [submodule "custom_nodes/ComfyUI-Easy-Use"]
 	path = custom_nodes/ComfyUI-Easy-Use
 	url = https://github.com/yolain/ComfyUI-Easy-Use
+[submodule "custom_nodes/CMManager"]
+	path = custom_nodes/CMManager
+	url = https://github.com/ltdrdata/ComfyUI-Manager.git
