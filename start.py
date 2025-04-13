@@ -1,20 +1,8 @@
-# start.py
 import subprocess
 import threading
 import time
 import socket
 import urllib.request
-<<<<<<< HEAD
-=======
-import logging
-
-# 配置日志格式
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s'
-)
-logger = logging.getLogger(__name__)
->>>>>>> 939bb363a760915006be8d684d9f82bc3cab39d6
 
 class ComfyUIService:
     def __init__(self, port: int = 8188):
@@ -31,7 +19,7 @@ class ComfyUIService:
         try:
             # 获取公网IP
             public_ip = urllib.request.urlopen(
-                'https://ipv4.icanhazip.com',
+                'https://ipv4.icanhazip.com', 
                 timeout=3
             ).read().decode('utf8').strip()
             
@@ -72,11 +60,7 @@ class ComfyUIService:
     def start_comfyui(self):
         """启动ComfyUI主服务"""
         try:
-<<<<<<< HEAD
             print("正在启动 ComfyUI 主服务...")
-=======
-            logger.info(" 正在启动 ComfyUI 主服务...")
->>>>>>> 939bb363a760915006be8d684d9f82bc3cab39d6
             subprocess.run(
                 ["python", "main.py", "--dont-print-server"],
                 check=True
