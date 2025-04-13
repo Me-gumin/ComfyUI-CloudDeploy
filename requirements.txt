@@ -1,6 +1,6 @@
 #Core Dependencies：
 comfyui-frontend-package==1.15.13
-torch==2.5.1+cu124
+torch==2.5.1
 torchsde==0.2.6
 torchvision==0.20.1+cu124
 numpy==1.26.4
