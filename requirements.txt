@@ -72,3 +72,8 @@ addict==2.4.0
 yapf==0.43.0
 fvcore==0.1.5.post20221221
 omegaconf==2.3.0
+
+#fixed
+fsspec==2024.10.0
+ibis-framework==10.4.0
+pylibcugraph-cu12==25.2.0
