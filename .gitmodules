@@ -46,3 +46,6 @@
 [submodule "custom_nodes/Plasma"]
 	path = custom_nodes/Plasma
 	url = https://github.com/Jordach/comfy-plasma.git
+[submodule "custom_nodes/Custom-Scripts"]
+	path = custom_nodes/Custom-Scripts
+	url = https://github.com/pythongosssss/ComfyUI-Custom-Scripts.git
