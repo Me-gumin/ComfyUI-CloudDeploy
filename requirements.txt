@@ -2,7 +2,7 @@
 comfyui-frontend-package==1.15.13
 torch==2.5.1
 torchsde==0.2.6
-torchvision==0.20.1+cu124
+torchvision==0.20.1
 numpy==1.26.4
 einops==0.8.1
 transformers==4.51.1
