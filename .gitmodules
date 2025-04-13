@@ -28,3 +28,6 @@
 [submodule "custom_nodes/Cut-off"]
 	path = custom_nodes/Cut-off
 	url = https://github.com/BlenderNeko/ComfyUI_Cutoff
+[submodule "custom_nodes/was-node-suite-comfyui"]
+	path = custom_nodes/was-node-suite-comfyui
+	url = https://github.com/WASasquatch/was-node-suite-comfyui
