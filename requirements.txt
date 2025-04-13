@@ -54,7 +54,7 @@ git+https://github.com/WASasquatch/cstr
 imageio==2.37.0
 joblib==1.4.2
 numba==0.60.0
-opencv-python-headless[ffmpeg]
+opencv-python[ffmpeg]==4.11.0.86
 pilgram
 git+https://github.com/WASasquatch/ffmpy.git
 rembg
