@@ -1,3 +1,6 @@
 [submodule "custom_nodes/comfyui_controlnet_aux"]
 	path = custom_nodes/comfyui_controlnet_aux
 	url = https://github.com/Fannovel16/comfyui_controlnet_aux.git
+[submodule "custom_nodes/ComfyUI-Easy-Use"]
+	path = custom_nodes/ComfyUI-Easy-Use
+	url = https://github.com/yolain/ComfyUI-Easy-Use
