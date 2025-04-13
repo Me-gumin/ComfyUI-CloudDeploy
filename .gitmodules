@@ -52,3 +52,6 @@
 [submodule "custom_nodes/TiledKSampler"]
 	path = custom_nodes/TiledKSampler
 	url = https://github.com/BlenderNeko/ComfyUI_TiledKSampler.git
+[submodule "custom_nodes/ImagesGrid"]
+	path = custom_nodes/ImagesGrid
+	url = https://github.com/LEv145/images-grid-comfy-plugin.git
