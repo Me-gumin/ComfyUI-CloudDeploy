@@ -77,3 +77,4 @@ omegaconf==2.3.0
 fsspec==2024.10.0
 ibis-framework==10.4.0
 pylibcugraph-cu12==25.2.0
+simpleeval==1.0.3
