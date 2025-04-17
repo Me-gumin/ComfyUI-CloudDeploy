@@ -29,7 +29,7 @@ type Config struct {
 func InitConfig() *Config {
 	cfg := &Config{
 		IP:   "0.0.0.0",
-		Port: 1188,
+		Port: 38188,
 	}
 
 	// IP flag
