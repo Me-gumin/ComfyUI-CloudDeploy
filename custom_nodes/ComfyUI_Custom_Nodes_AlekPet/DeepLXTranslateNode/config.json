@@ -1,0 +1,7 @@
+{
+  "settings": {
+    "__commnet": "Please check the list of available languages ​​before specifying, especially target_lang! See README file",
+    "source_lang": "English",
+    "target_lang": "Chinese (simplified)"
+  }
+}
