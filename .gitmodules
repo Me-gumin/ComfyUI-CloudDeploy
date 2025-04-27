@@ -52,3 +52,6 @@
 [submodule "custom_nodes/ImagesGrid"]
 	path = custom_nodes/ImagesGrid
 	url = https://github.com/LEv145/images-grid-comfy-plugin.git
+[submodule "custom_nodes/rgthree-comfy"]
+	path = custom_nodes/rgthree-comfy
+	url = https://github.com/rgthree/rgthree-comfy.git
