@@ -16,6 +16,9 @@ pillow==11.1.0
 scipy==1.15.2
 tqdm==4.67.1
 psutil==7.0.0
+color-matcher
+huggingface_hub
+mss
 
 #Non-Essential Dependencies
 kornia==0.8.0
