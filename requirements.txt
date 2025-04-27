@@ -19,6 +19,11 @@ psutil==7.0.0
 color-matcher
 huggingface_hub
 mss
+deepdiff
+pynvml
+py-cpuinfo
+piexif
+
 
 #Non-Essential Dependencies
 kornia==0.8.0
