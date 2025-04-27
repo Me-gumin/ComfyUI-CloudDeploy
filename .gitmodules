@@ -79,3 +79,6 @@
 [submodule "custom_nodes/Comfyroll_CustomNodes"]
 	path = custom_nodes/Comfyroll_CustomNodes
 	url = https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes.git
+[submodule "custom_nodes/ComfyUI-Kolors-MZ"]
+	path = custom_nodes/ComfyUI-Kolors-MZ
+	url = https://github.com/MinusZoneAI/ComfyUI-Kolors-MZ.git
