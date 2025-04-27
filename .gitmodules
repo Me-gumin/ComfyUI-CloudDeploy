@@ -61,3 +61,6 @@
 [submodule "custom_nodes/ComfyUI-BrushNet"]
 	path = custom_nodes/ComfyUI-BrushNet
 	url = https://github.com/nullquant/ComfyUI-BrushNet.git
+[submodule "custom_nodes/comfyui-inpaint-nodes"]
+	path = custom_nodes/comfyui-inpaint-nodes
+	url = https://github.com/Acly/comfyui-inpaint-nodes.git
