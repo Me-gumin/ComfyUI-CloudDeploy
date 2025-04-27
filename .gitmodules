@@ -58,3 +58,6 @@
 [submodule "custom_nodes/ComfyUI-KJNodes"]
 	path = custom_nodes/ComfyUI-KJNodes
 	url = https://github.com/kijai/ComfyUI-KJNodes.git
+[submodule "custom_nodes/ComfyUI-BrushNet"]
+	path = custom_nodes/ComfyUI-BrushNet
+	url = https://github.com/nullquant/ComfyUI-BrushNet.git
