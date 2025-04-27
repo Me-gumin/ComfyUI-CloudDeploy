@@ -73,3 +73,6 @@
 [submodule "custom_nodes/ComfyUI-Florence2"]
 	path = custom_nodes/ComfyUI-Florence2
 	url = https://github.com/kijai/ComfyUI-Florence2.git
+[submodule "custom_nodes/ComfyUI-Crystools"]
+	path = custom_nodes/ComfyUI-Crystools
+	url = https://github.com/crystian/ComfyUI-Crystools.git
