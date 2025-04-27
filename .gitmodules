@@ -55,3 +55,6 @@
 [submodule "custom_nodes/rgthree-comfy"]
 	path = custom_nodes/rgthree-comfy
 	url = https://github.com/rgthree/rgthree-comfy.git
+[submodule "custom_nodes/ComfyUI-KJNodes"]
+	path = custom_nodes/ComfyUI-KJNodes
+	url = https://github.com/kijai/ComfyUI-KJNodes.git
