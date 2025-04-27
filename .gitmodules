@@ -76,3 +76,6 @@
 [submodule "custom_nodes/ComfyUI-Crystools"]
 	path = custom_nodes/ComfyUI-Crystools
 	url = https://github.com/crystian/ComfyUI-Crystools.git
+[submodule "custom_nodes/Comfyroll_CustomNodes"]
+	path = custom_nodes/Comfyroll_CustomNodes
+	url = https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes.git
