@@ -67,3 +67,6 @@
 [submodule "custom_nodes/ComfyUI-Advanced-ControlNet"]
 	path = custom_nodes/ComfyUI-Advanced-ControlNet
 	url = https://github.com/Kosinkadink/ComfyUI-Advanced-ControlNet.git
+[submodule "custom_nodes/ComfyUI_essentials"]
+	path = custom_nodes/ComfyUI_essentials
+	url = https://github.com/cubiq/ComfyUI_essentials.git
