@@ -40,4 +40,5 @@ comfy_extras/__pycache__/
 comfy_extras/chainner_models/__pycache__/
 custom_nodes/__pycache__/
 user/
-utils/__pycache__/
+utils/__pycache__/models/inpaint/fooocus/big-lama.pt
+models/inpaint/fooocus/inpaint_v26.fooocus.patch
