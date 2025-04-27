@@ -70,3 +70,6 @@
 [submodule "custom_nodes/ComfyUI_essentials"]
 	path = custom_nodes/ComfyUI_essentials
 	url = https://github.com/cubiq/ComfyUI_essentials.git
+[submodule "custom_nodes/ComfyUI-Florence2"]
+	path = custom_nodes/ComfyUI-Florence2
+	url = https://github.com/kijai/ComfyUI-Florence2.git
