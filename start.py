@@ -35,7 +35,7 @@ class ComfyUIService:
             
             # 启动localtunnel
             process = subprocess.Popen(
-                ["lt", "--port", str(self.port)],
+                ["lt", "--subdomain", "mycomfyui", "--port", str(self.port)],
                 stdout=subprocess.PIPE,
                 stderr=subprocess.PIPE,
                 text=True
