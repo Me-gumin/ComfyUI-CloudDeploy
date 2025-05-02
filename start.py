@@ -69,7 +69,7 @@ class ComfyUIService:
         try:
             logging.info(" 正在启动 ComfyUI 主服务...")
             subprocess.run(
-                ["python", "main.py", "--dont-print-server"],
+                ["python", "main.py", "--dont-print-server","--force-fp16"],
                 check=True
             )
         except subprocess.CalledProcessError as e:
