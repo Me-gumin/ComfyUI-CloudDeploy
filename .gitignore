@@ -40,3 +40,4 @@ comfy_extras/__pycache__/
 comfy_extras/chainner_models/__pycache__/
 custom_nodes/__pycache__/
 user/
+.idea/
