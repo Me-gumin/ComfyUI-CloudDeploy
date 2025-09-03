@@ -26,6 +26,8 @@
 [pythongosssss](https://github.com/pythongosssss/ComfyUI-Custom-Scripts),
 [BlenderNeko](https://github.com/BlenderNeko/ComfyUI_TiledKSampler),
 [LEv145](https://github.com/LEv145/images-grid-comfy-plugin)
+## 感谢大佬的ssh隧穿工具pinggy,很好用！
+https://github.com/wandaweb/jupyter-webui-tunneling
 
 ## 说明
 <br>requirements.txt是kaggle跑通后，由!pip freeze > requirements.txt缓存得到的依赖文件,解决了项目依赖问题</br>
