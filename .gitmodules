@@ -82,3 +82,6 @@
 [submodule "custom_nodes/ComfyUI-Kolors-MZ"]
 	path = custom_nodes/ComfyUI-Kolors-MZ
 	url = https://github.com/MinusZoneAI/ComfyUI-Kolors-MZ.git
+[submodule "pinggy"]
+	path = pinggy
+	url = https://github.com/wandaweb/jupyter-webui-tunneling.git
