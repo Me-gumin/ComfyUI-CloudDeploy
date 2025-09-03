@@ -31,4 +31,5 @@
 <br>requirements.txt是kaggle跑通后，由!pip freeze > requirements.txt缓存得到的依赖文件,解决了项目依赖问题</br>
 <br>先git本项目，再安装 !pip install -q -r requirements.txt</br>
 <br>最后在kaggle/colab中运行!python start.py</br>
+<br>如果是kaggle环境，运行!python kaggle_starter.py</br>
 <br>模型需要单独配置，只带节点</br>
