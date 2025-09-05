@@ -91,3 +91,6 @@
 [submodule "custom_nodes/ComfyUI-Impact-Subpack"]
 	path = custom_nodes/ComfyUI-Impact-Subpack
 	url = https://github.com/ltdrdata/ComfyUI-Impact-Subpack.git
+[submodule "custom_nodes/comfyui-various"]
+	path = custom_nodes/comfyui-various
+	url = https://github.com/jamesWalker55/comfyui-various.git
