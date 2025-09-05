@@ -94,6 +94,3 @@
 [submodule "custom_nodes/comfyui-various"]
 	path = custom_nodes/comfyui-various
 	url = https://github.com/jamesWalker55/comfyui-various.git
-[submodule "custom_nodes/ComfyUI-Nudenet"]
-	path = custom_nodes/ComfyUI-Nudenet
-	url = https://github.com/phuvinh010701/ComfyUI-Nudenet.git
