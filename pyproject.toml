@@ -22,3 +22,6 @@ lint.select = [
 ]
 exclude = ["*.ipynb"]
 ignore = ["W29"]
+
+[tool.ruff.lint]
+ignore = ["T201", "F401", "UP032"]
