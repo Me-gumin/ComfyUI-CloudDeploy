@@ -44,3 +44,5 @@ user/
 models/sams/
 models/ultralytics/
 models/Nudenet/
+input/
+output/
