@@ -85,3 +85,6 @@
 [submodule "pinggy"]
 	path = pinggy
 	url = https://github.com/wandaweb/jupyter-webui-tunneling.git
+[submodule "custom_nodes/ComfyUI-Impact-Pack"]
+	path = custom_nodes/ComfyUI-Impact-Pack
+	url = https://github.com/ltdrdata/ComfyUI-Impact-Pack.git
