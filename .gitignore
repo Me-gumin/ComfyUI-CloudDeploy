@@ -43,3 +43,4 @@ user/
 .idea/
 models/sams/
 models/ultralytics/
+models/Nudenet/
