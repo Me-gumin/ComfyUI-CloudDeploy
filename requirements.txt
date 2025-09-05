@@ -27,13 +27,16 @@ deepdiff
 pynvml
 py-cpuinfo
 piexif
-
+alembic
+SQLAlchemy
 
 #Non-Essential Dependencies
 kornia==0.8.0
 spandrel==0.4.1
 soundfile==0.13.1
 av==14.3.0
+pydantic~=2.0
+pydantic-settings~=2.0
 
 #Manager Dependencies：
 GitPython==3.1.44
@@ -91,6 +94,7 @@ ibis-framework==10.4.0
 pylibcugraph-cu12==25.2.0
 simpleeval==1.0.3
 
+#add
 ultralytics>=8.3.162
 opencv-python-headless
 dill
