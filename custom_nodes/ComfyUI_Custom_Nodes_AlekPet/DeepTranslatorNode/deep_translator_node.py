@@ -216,7 +216,6 @@ def selectService(service):
             "PapagoTranslator",
             "BaiduTranslator",
         ):  # "MyMemoryTranslator" ???
-            auto_support = False
 
         return langs_support
 
