@@ -30,11 +30,12 @@
 [ltdrdata](https://github.com/ltdrdata/ComfyUI-Impact-Subpack.git),
 [jamesWalker55](https://github.com/jamesWalker55/comfyui-various.git)
 ## 感谢大佬的ssh隧穿工具pinggy,很好用！
-https://github.com/wandaweb/jupyter-webui-tunneling
+[wandaweb](https://github.com/wandaweb/jupyter-webui-tunneling)
 
 ## 说明
 <br>requirements.txt是kaggle跑通后，由!pip freeze > requirements.txt缓存得到的依赖文件,解决了项目依赖问题</br>
 <br>先git本项目，再安装 !pip install -q -r requirements.txt</br>
-<br>最后在kaggle/colab中运行!python start.py</br>
-<br>如果是kaggle环境，运行!python kaggle_starter.py</br>
+<br>最后在kaggle/colab中运行(以kaggle为例)</br>
+<br>%cd /kaggle/working/ComfyUI</br>
+<br>!python /pinggy/pinggy.py --command='python main.py' --port=8188</br>
 <br>模型需要单独配置，只带节点</br>
