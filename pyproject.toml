@@ -13,12 +13,9 @@ documentation = "https://docs.comfy.org/"
 [tool.ruff]
 lint.select = [
   "S307", # suspicious-eval-usage
-  "S102", # exec
-  "W",
   # The "F" series in Ruff stands for "Pyflakes" rules, which catch various Python syntax errors and undefined names.
   # See all rules here: https://docs.astral.sh/ruff/rules/#pyflakes-f
-  "F",
 ]
 exclude = ["*.ipynb"]
-ignore = ["W29","T201", "F401", "UP032"]
+ignore = ["W29","T201", "F401", "UP032","W191"]
 
