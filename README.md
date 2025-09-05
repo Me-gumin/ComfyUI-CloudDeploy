@@ -25,7 +25,10 @@
 [rock-land](https://github.com/rock-land/graphNavigator),
 [pythongosssss](https://github.com/pythongosssss/ComfyUI-Custom-Scripts),
 [BlenderNeko](https://github.com/BlenderNeko/ComfyUI_TiledKSampler),
-[LEv145](https://github.com/LEv145/images-grid-comfy-plugin)
+[LEv145](https://github.com/LEv145/images-grid-comfy-plugin),
+[ltdrdata](https://github.com/ltdrdata/ComfyUI-Impact-Pack),
+[ltdrdata](https://github.com/ltdrdata/ComfyUI-Impact-Subpack.git),
+[jamesWalker55](https://github.com/jamesWalker55/comfyui-various.git)
 ## 感谢大佬的ssh隧穿工具pinggy,很好用！
 https://github.com/wandaweb/jupyter-webui-tunneling
 
