@@ -86,3 +86,12 @@ fsspec==2024.10.0
 ibis-framework==10.4.0
 pylibcugraph-cu12==25.2.0
 simpleeval==1.0.3
+
+ultralytics>=8.3.162
+opencv-python-headless
+dill
+OpenEXR
+segment-anything
+git+https://github.com/facebookresearch/sam2
+
+
