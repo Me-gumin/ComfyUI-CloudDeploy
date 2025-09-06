@@ -56,8 +56,14 @@ BLOCK_COUNT_BEHAVIOURS = [
 ]
 
 
-def read_image(img, target_size=320):
+def read_image(img, target_size=640):
     assert isinstance(img, np.ndarray)
+
+    # ?? ȷ�� target_size �� int
+    try:
+        target_size = int(target_size)
+    except Exception:
+        raise ValueError(f"target_size must be int but it is {target_size} ({type(target_size)})")
 
     img_height, img_width = img.shape[:2]
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
@@ -159,44 +165,69 @@ def nudenet_execute(
         overlay_image = overlay_image[0].cpu().numpy()
         alpha_mask = alpha_mask.reshape((alpha_mask.shape[-2], alpha_mask.shape[-1])).cpu().numpy()
 
-    
     for i in range(batch_size):
         image = input_images[i].cpu().numpy()
+
+        target_size_value = nudenet_model["input_width"]
+
         preprocessed_image, resize_factor, pad_left, pad_top = read_image(
-            image, nudenet_model["input_width"]
+            image, target_size_value
         )
         outputs = nudenet_model["session"].run(
             None, {nudenet_model["input_name"]: preprocessed_image}
         )
         detections = postprocess(outputs, resize_factor, pad_left, pad_top, min_score)
         censored = [d for d in detections if d.get("id") not in filtered_labels]
-    
+
         if block_count_scaling == "fixed":
             scaled_blocks = blocks
-        
-        for d in censored:        
+
+        for d in censored:
             box = d["box"]
             x, y, w, h = box[0], box[1], box[2], box[3]
-            area = image[y : y + h, x : x + w]
-            
+            area = image[y:y+h, x:x+w]
+
+            if area.size == 0:
+                continue  # 跳过无效区域
+
+            # 动态缩放 block 数量
             if block_count_scaling != "fixed":
-                d_pct = max(h / image.shape[:2][0], w / image.shape[:2][1])
+                d_pct = max(h / image.shape[0], w / image.shape[1])
                 if block_count_scaling == "fewer_when_large":
-                    scaled_blocks = int(blocks + d_pct * (1 - blocks)) 
-                else: # elif block_count_scaling == "fewer_when_small"
-                    scaled_blocks = int(1 + d_pct * (blocks - 1)) 
-            
+                    scaled_blocks = int(blocks + d_pct * (1 - blocks))
+                else:  # "fewer_when_small"
+                    scaled_blocks = int(1 + d_pct * (blocks - 1))
+
             if censor_method == "pixelate":
-                image[y : y + h, x : x + w] = pixelate(area, blocks=scaled_blocks)
+                pixel_size = max(1, min(w, h) // max(1, scaled_blocks))
+                pixel_size = min(pixel_size, 50)  # 上限 50
+                temp = cv2.resize(area, (max(1, w // pixel_size), max(1, h // pixel_size)), interpolation=cv2.INTER_LINEAR)
+                output_area = cv2.resize(temp, (w, h), interpolation=cv2.INTER_NEAREST)
+                image[y:y+h, x:x+w] = output_area
+
             elif censor_method == "blur":
-                image[y : y + h, x : x + w] = cv2.blur(area, (scaled_blocks, scaled_blocks))
+                k = max(1, scaled_blocks)
+                if k % 2 == 0:
+                    k += 1
+                k = min(k, 99)  # OpenCV 限制
+                image[y:y+h, x:x+w] = cv2.blur(area, (k, k))
+
             elif censor_method == "gaussian_blur":
-                image[y : y + h, x : x + w] = cv2.GaussianBlur(area, (h, h), 0)
+                k = max(1, min(w, h) // 2)
+                if k % 2 == 0:
+                    k += 1
+                k = min(k, 99)
+                image[y:y+h, x:x+w] = cv2.GaussianBlur(area, (k, k), 0)
+
             elif censor_method == "image":
                 pasty = cv2.resize(overlay_image, (w, h))
-                alpha_mask = cv2.resize(alpha_mask, (w, h))
-                image = overlay(image, pasty, alpha_mask, x, y, overlay_strength)
-            
+                mask_resized = cv2.resize(alpha_mask, (w, h))
+                image = overlay(image, pasty, mask_resized, x, y, overlay_strength)
+
+            else:
+                # 默认黑块覆盖
+                image[y:y+h, x:x+w] = 0
+
         output_images.append(torch.from_numpy(image).unsqueeze(0))
 
     return torch.cat(output_images, dim=0)
@@ -289,6 +320,14 @@ class FilteredLabel:
         return (white_list_class_ids,)
 
 
+def safe_int(x, default=640):
+    """尝试把 x 转换成 int，如果失败则返回 default"""
+    try:
+        return int(x)
+    except Exception:
+        return default
+
+
 class NudenetModelLoader:
     @classmethod
     def INPUT_TYPES(s):
@@ -306,13 +345,25 @@ class NudenetModelLoader:
         import onnxruntime
         from onnxruntime.capi import _pybind_state as C
 
+        model_path = os.path.join(current_paths[0], model)
         self.session = onnxruntime.InferenceSession(
-            os.path.join(current_paths[0], model), providers=C.get_available_providers()
+            model_path, providers=C.get_available_providers()
         )
         model_inputs = self.session.get_inputs()
-        self.input_width = model_inputs[0].shape[2]
-        self.input_height = model_inputs[0].shape[3]
+
+        # 根据文件名推断默认分辨率
+        if "320" in model.lower():
+            default_size = 320
+        else:
+            default_size = 640
+
+        # 处理动态维度
+        self.input_width = safe_int(model_inputs[0].shape[2], default=default_size)
+        self.input_height = safe_int(model_inputs[0].shape[3], default=default_size)
         self.input_name = model_inputs[0].name
+
+        print(f"[Nudenet] lodding model: {model}")
+        print(f"[Nudenet] input size: {self.input_width}x{self.input_height}")
 
         return (
             ModelLoader(
