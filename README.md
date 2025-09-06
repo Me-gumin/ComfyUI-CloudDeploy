@@ -28,7 +28,8 @@
 [LEv145](https://github.com/LEv145/images-grid-comfy-plugin),
 [ltdrdata](https://github.com/ltdrdata/ComfyUI-Impact-Pack),
 [ltdrdata](https://github.com/ltdrdata/ComfyUI-Impact-Subpack.git),
-[jamesWalker55](https://github.com/jamesWalker55/comfyui-various.git)
+[jamesWalker55](https://github.com/jamesWalker55/comfyui-various.git),
+[phuvinh010701](https://github.com/phuvinh010701/ComfyUI-Nudenet.git)
 ## 感谢大佬的ssh隧穿工具pinggy,很好用！
 [wandaweb](https://github.com/wandaweb/jupyter-webui-tunneling)
 
