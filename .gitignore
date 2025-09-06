@@ -46,3 +46,4 @@ models/ultralytics/
 models/Nudenet/
 input/
 output/
+custom_nodes/ComfyUI-Nudenet/example
