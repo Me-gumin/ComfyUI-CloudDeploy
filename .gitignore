@@ -44,6 +44,9 @@ user/
 models/sams/
 models/ultralytics/
 models/Nudenet/
+models/checkpoints/
+models/loras/
+
 input/
 output/
 custom_nodes/ComfyUI-Nudenet/example
