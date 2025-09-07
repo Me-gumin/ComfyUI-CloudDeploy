@@ -94,3 +94,6 @@
 [submodule "custom_nodes/comfyui-various"]
 	path = custom_nodes/comfyui-various
 	url = https://github.com/jamesWalker55/comfyui-various.git
+[submodule "custom_nodes/ComfyUI-NSFW-Detection"]
+	path = custom_nodes/ComfyUI-NSFW-Detection
+	url = https://github.com/trumanwong/ComfyUI-NSFW-Detection.git
