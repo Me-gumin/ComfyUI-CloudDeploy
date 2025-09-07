@@ -47,14 +47,14 @@ models/Nudenet/
 input/
 output/
 custom_nodes/ComfyUI-Nudenet/example
-custom_nodes\ComfyUI-Selector-CoInput-Multilingual/Zho_Selector/__pycache__/
+custom_nodes/ComfyUI-Selector-CoInput-Multilingual/Zho_Selector/__pycache__/
 custom_nodes/ComfyUI-Selector-CoInput-Multilingual/__pycache__/
 custom_nodes/Comfyroll_CustomNodes
 custom_nodes/Cut-off
 custom_nodes/TiledKSampler
 custom_nodes/efficiency-nodes-comfyui
 custom_nodes/stability-ComfyUI-nodes
-
+custom_nodes/MaskOverlayNode/__pycache__/
 
 
 
