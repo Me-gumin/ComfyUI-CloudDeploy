@@ -1,7 +1,7 @@
 #Core Dependencies：
-comfyui-frontend-package==1.15.13
-#comfyui-workflow-templates==0.1.10
-#comfyui-embedded-docs==0.1.0
+comfyui-frontend-package==1.18.7
+comfyui-workflow-templates==0.1.15
+comfyui-embedded-docs==0.2.0
 
 torch==2.5.1
 torchaudio==2.5.1
